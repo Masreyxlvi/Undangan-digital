@@ -8,6 +8,7 @@ body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
   margin-bottom: 3000px;
+  /* overflow: hidden; */
 }
 
 /* hero */

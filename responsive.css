@@ -51,6 +51,7 @@
   html {
     font-size: 65%;
   }
+
   .simply-countdown > .simply-section {
     padding: 40px !important;
     margin: 5px;
@@ -62,6 +63,10 @@
   }
   .sticky-top {
     overflow: hidden;
+    padding-right: 0;
+  }
+  .offcanvas {
+    padding-right: 0;
   }
 
   .timeline li .timeline-image {
@@ -74,6 +79,7 @@
   html {
     font-size: 60%;
   }
+
   .simply-countdown > .simply-section {
     padding: 35px !important;
     margin: 3px;
