@@ -15,4 +15,26 @@ offcanvas.addEventListener("hidden.bs.offcanvas", function () {
 });
 
 // DisableScroll
-scrollTop = window.padeYOffset;
+const rootElememt = document.querySelector(":root");
+function DisableScroll() {
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  scrollLeft = window.pageYOffset || document.documentElement.scrollLeft;
+
+  window.onscroll = function () {
+    window.scrollTo(scrollTop, scrollLeft);
+  };
+
+  rootElememt.style.scrollBehavior = "auto";
+}
+
+function enableScroll() {
+  window.onscroll = function () {};
+  rootElememt.style.scrollBehavior = "smooth";
+
+  localStorage.setItem("opened", "true");
+}
+
+if (!localStorage.getItem("opened")) {
+  DisableScroll();
+}
+// DisableScroll();
