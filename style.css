@@ -339,6 +339,28 @@ body {
   border: 1px solid white;
 }
 
+/* gifts */
+
+.gifts img {
+  width: 120px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.gifts button {
+  /* display: block; */
+
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+.gifts button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid white;
+}
+/* footer */
+
 footer {
   padding: 3rem;
   background-color: var(--pink);
@@ -355,4 +377,33 @@ footer li {
   list-style: none;
   display: inline;
   margin: 0.5rem;
+}
+
+/* audio */
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
